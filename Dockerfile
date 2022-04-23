@@ -23,11 +23,13 @@ FROM ruby:3.1
 
 ENV RAILS_ENV=production
 
+COPY --from=build /opt/openmensa /opt/openmensa
+WORKDIR /opt/openmensa
+
 RUN gem install bundler -v "$(grep -A 1 "BUNDLED WITH" Gemfile.lock | tail -n 1)" && \
   bundle config set --local deployment 'true' && \
   bundle config set --local without 'development test'
 
-COPY --from=build /opt/openmensa /opt/openmensa
 COPY --from=build /etc/openmensa /etc/openmensa
 
 RUN mkdir --parents /opt/openmensa /var/log/openmensa && \
@@ -36,7 +38,7 @@ RUN mkdir --parents /opt/openmensa /var/log/openmensa && \
   useradd --create-home --home-dir /var/lib/openmensa --shell /bin/bash openmensa && \
   chown openmensa:openmensa /var/log/openmensa
 
-COPY --from=build /opt/openmensa /opt/openmensa/
-
 USER openmensa
-WORKDIR /opt/openmensa
+
+EXPOSE 3000
+CMD ["bundle", "exec", "rails", "server"]
