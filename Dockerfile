@@ -12,6 +12,7 @@ RUN gem install bundler -v "$(grep -A 1 "BUNDLED WITH" Gemfile.lock | tail -n 1)
     bundle config set --local without 'development test' && \
     bundle install --jobs 4 --retry 3
 
+# Note: see also .dockerignore
 COPY . /opt/openmensa/
 RUN bundle exec rake assets:precompile && \
     rm -rf /opt/openmensa/log /opt/openmensa/tmp
