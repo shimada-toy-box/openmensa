@@ -23,7 +23,8 @@ FROM ruby:3.1
 
 ENV RAILS_ENV=production
 
-RUN bundle config set --local deployment 'true' && \
+RUN gem install bundler -v "$(grep -A 1 "BUNDLED WITH" Gemfile.lock | tail -n 1)" && \
+  bundle config set --local deployment 'true' && \
   bundle config set --local without 'development test'
 
 COPY --from=build /opt/openmensa /opt/openmensa
