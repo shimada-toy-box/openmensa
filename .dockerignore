@@ -12,3 +12,4 @@ public/assets/
 !Gemfile.lock
 !LICENSE*
 !Rakefile
+!start.sh
