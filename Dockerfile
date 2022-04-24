@@ -1,4 +1,4 @@
-FROM ruby:3.1 AS build
+FROM ruby:2.7.6 AS build
 
 ENV RAILS_ENV=production
 ENV RAILS_GROUPS=assets
@@ -18,7 +18,7 @@ RUN bundle exec rake assets:precompile && \
     rm -rf /opt/openmensa/log /opt/openmensa/tmp
 
 
-FROM ruby:3.1
+FROM ruby:2.7.6
 
 ENV RAILS_ENV=production
 
@@ -35,7 +35,10 @@ RUN gem install bundler -v "$(grep -A 1 "BUNDLED WITH" Gemfile.lock | tail -n 1)
     useradd --create-home --home-dir /var/lib/openmensa --shell /bin/bash openmensa && \
     chown openmensa:openmensa /var/log/openmensa
 
+COPY start.sh /bin/start.sh
+
 USER openmensa
 
 EXPOSE 3000
-CMD ["bundle", "exec", "rails", "server"]
+
+CMD ["/bin/start.sh"]
