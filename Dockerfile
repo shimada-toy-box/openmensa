@@ -5,6 +5,8 @@ FROM docker.io/ruby:2.7.6 AS build
 ENV RAILS_ENV=production
 ENV RAILS_GROUPS=assets
 
+SHELL ["/bin/bash", "-o", "pipefail", "-c"]
+
 RUN mkdir --parents /opt/openmensa
 WORKDIR /opt/openmensa
 
@@ -27,6 +29,8 @@ EOF
 FROM docker.io/ruby:2.7.6
 
 ENV RAILS_ENV=production
+
+SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 
 COPY --from=build /opt/openmensa /opt/openmensa
 WORKDIR /opt/openmensa
