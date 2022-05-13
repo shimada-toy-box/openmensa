@@ -19,8 +19,16 @@ services:
       DATABASE_URL: "postgresql://openmensa:openmensa@postgres/openmensa"
     volumes:
     - ./volume/www:/mnt/openmensa-www
-    # ports:
-    # - "3000:3000" # TODO: temporary?
+    depends_on:
+    - postgres
+
+  cron:
+    image: ghcr.io/openmensa/openmensa:latest
+    user: root
+    command: /bin/start-cron.sh
+    restart: always
+    environment:
+      DATABASE_URL: "postgresql://openmensa:openmensa@postgres/openmensa"
     depends_on:
     - postgres
 

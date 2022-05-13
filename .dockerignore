@@ -12,4 +12,5 @@ public/assets/
 !Gemfile.lock
 !LICENSE*
 !Rakefile
-!start.sh
+!start-cron.sh
+!start-rails.sh
