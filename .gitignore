@@ -29,3 +29,5 @@ Guardfile.local
 *.iml
 .ruby-gemset
 public/assets
+
+/volume
