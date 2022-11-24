@@ -1,0 +1,1362 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://doc.openmensa.org/feed/v2/">
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.3.9">
+    
+    
+      
+        <title>Feed v2 - OpenMensa</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.1d29e8d0.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.cbb835fc.min.css">
+        
+      
+      
+    
+    
+    
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="white" data-md-color-accent="">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#feed-v2" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="OpenMensa" class="md-header__button md-logo" aria-label="OpenMensa" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            OpenMensa
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Feed v2
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      <form class="md-header__option" data-md-component="palette">
+        
+          
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="white" data-md-color-accent=""  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+          
+            <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+            </label>
+          
+        
+          
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent=""  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_2">
+          
+            <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12c0-2.42-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+            </label>
+          
+        
+      </form>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7 0-.24-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91 1.61 0 2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08Z"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/openmensa/openmensa" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    openmensa/openmensa
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="OpenMensa" class="md-nav__button md-logo" aria-label="OpenMensa" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    OpenMensa
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/openmensa/openmensa" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    openmensa/openmensa
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        Developer Documentation
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" checked>
+      
+      
+      
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_2">
+          API
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="API" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          API
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" data-md-toggle="__nav_2_1" type="checkbox" id="__nav_2_1" checked>
+      
+      
+      
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_2_1">
+          API v2
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="API v2" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_1">
+          <span class="md-nav__icon md-icon"></span>
+          API v2
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../api/v2/overview/" class="md-nav__link">
+        Overview
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../api/v2/errors/" class="md-nav__link">
+        Client Errors
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" data-md-toggle="__nav_2_1_3" type="checkbox" id="__nav_2_1_3" checked>
+      
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../api/v2/canteens/">Canteens</a>
+          
+            <label for="__nav_2_1_3">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Canteens" data-md-level="3">
+        <label class="md-nav__title" for="__nav_2_1_3">
+          <span class="md-nav__icon md-icon"></span>
+          Canteens
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../api/v2/canteens/days/" class="md-nav__link">
+        Days
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../api/v2/canteens/meals/" class="md-nav__link">
+        Meals
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" checked>
+      
+      
+      
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_3">
+          Feed Formats
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Feed Formats" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          Feed Formats
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../v1/" class="md-nav__link">
+        Feed v1 (deprecated)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Feed v2
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Feed v2
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#availability" class="md-nav__link">
+    Availability
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#changelog" class="md-nav__link">
+    Changelog
+  </a>
+  
+    <nav class="md-nav" aria-label="Changelog">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#version-21-2015-04-05-beta-release" class="md-nav__link">
+    Version 2.1 (2015-04-05, beta release)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#version-20-2012-09-02" class="md-nav__link">
+    Version 2.0 (2012-09-02)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#feed-example" class="md-nav__link">
+    Example
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#validation" class="md-nav__link">
+    Validation
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#elements" class="md-nav__link">
+    Elements
+  </a>
+  
+    <nav class="md-nav" aria-label="Elements">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#el-openmensa" class="md-nav__link">
+    &lt;openmensa&gt;
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#el-version" class="md-nav__link">
+    &lt;version&gt; (since version 2.1)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#el-canteen" class="md-nav__link">
+    &lt;canteen&gt;
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#el-day" class="md-nav__link">
+    &lt;day&gt;
+  </a>
+  
+    <nav class="md-nav" aria-label="&lt;day&gt;">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#closed-days" class="md-nav__link">
+    Closed days
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#el-category" class="md-nav__link">
+    &lt;category&gt;
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#el-meal" class="md-nav__link">
+    &lt;meal&gt;
+  </a>
+  
+    <nav class="md-nav" aria-label="&lt;meal&gt;">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#el-meal-name" class="md-nav__link">
+    &lt;name&gt;
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#el-meal-notes" class="md-nav__link">
+    &lt;notes&gt;
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#el-meal-price" class="md-nav__link">
+    &lt;price&gt;
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#meta-data-since-version-21" class="md-nav__link">
+    Meta data (since version 2.1)
+  </a>
+  
+    <nav class="md-nav" aria-label="Meta data (since version 2.1)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#metadata-example" class="md-nav__link">
+    Example
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#el-feed" class="md-nav__link">
+    &lt;feed&gt;
+  </a>
+  
+    <nav class="md-nav" aria-label="&lt;feed&gt;">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#el-feed-url" class="md-nav__link">
+    &lt;url&gt;
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#el-feed-schedule" class="md-nav__link">
+    &lt;schedule&gt;
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#el-feed-source" class="md-nav__link">
+    &lt;source&gt;
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#canteen-meta-data" class="md-nav__link">
+    Canteen meta data
+  </a>
+  
+    <nav class="md-nav" aria-label="Canteen meta data">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#opening-times" class="md-nav__link">
+    Opening times
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" checked>
+      
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../parsers/">Parsers</a>
+          
+            <label for="__nav_4">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Parsers" data-md-level="1">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          Parsers
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../parsers/understand/" class="md-nav__link">
+        Concept
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../parsers/tutorial/" class="md-nav__link">
+        Creating a parser
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#availability" class="md-nav__link">
+    Availability
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#changelog" class="md-nav__link">
+    Changelog
+  </a>
+  
+    <nav class="md-nav" aria-label="Changelog">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#version-21-2015-04-05-beta-release" class="md-nav__link">
+    Version 2.1 (2015-04-05, beta release)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#version-20-2012-09-02" class="md-nav__link">
+    Version 2.0 (2012-09-02)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#feed-example" class="md-nav__link">
+    Example
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#validation" class="md-nav__link">
+    Validation
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#elements" class="md-nav__link">
+    Elements
+  </a>
+  
+    <nav class="md-nav" aria-label="Elements">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#el-openmensa" class="md-nav__link">
+    &lt;openmensa&gt;
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#el-version" class="md-nav__link">
+    &lt;version&gt; (since version 2.1)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#el-canteen" class="md-nav__link">
+    &lt;canteen&gt;
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#el-day" class="md-nav__link">
+    &lt;day&gt;
+  </a>
+  
+    <nav class="md-nav" aria-label="&lt;day&gt;">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#closed-days" class="md-nav__link">
+    Closed days
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#el-category" class="md-nav__link">
+    &lt;category&gt;
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#el-meal" class="md-nav__link">
+    &lt;meal&gt;
+  </a>
+  
+    <nav class="md-nav" aria-label="&lt;meal&gt;">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#el-meal-name" class="md-nav__link">
+    &lt;name&gt;
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#el-meal-notes" class="md-nav__link">
+    &lt;notes&gt;
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#el-meal-price" class="md-nav__link">
+    &lt;price&gt;
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#meta-data-since-version-21" class="md-nav__link">
+    Meta data (since version 2.1)
+  </a>
+  
+    <nav class="md-nav" aria-label="Meta data (since version 2.1)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#metadata-example" class="md-nav__link">
+    Example
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#el-feed" class="md-nav__link">
+    &lt;feed&gt;
+  </a>
+  
+    <nav class="md-nav" aria-label="&lt;feed&gt;">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#el-feed-url" class="md-nav__link">
+    &lt;url&gt;
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#el-feed-schedule" class="md-nav__link">
+    &lt;schedule&gt;
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#el-feed-source" class="md-nav__link">
+    &lt;source&gt;
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#canteen-meta-data" class="md-nav__link">
+    Canteen meta data
+  </a>
+  
+    <nav class="md-nav" aria-label="Canteen meta data">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#opening-times" class="md-nav__link">
+    Opening times
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+  <a href="https://github.com/openmensa/openmensa/blob/master/docs/feed/v2.md" title="Edit this page" class="md-content__button md-icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg>
+  </a>
+
+
+
+<h1 id="feed-v2">Feed v2<a class="headerlink" href="#feed-v2" title="Permanent link">&para;</a></h1>
+<h2 id="availability">Availability<a class="headerlink" href="#availability" title="Permanent link">&para;</a></h2>
+<p>As XML Schema: <a href="http://openmensa.org/open-mensa-v2.xsd">http://openmensa.org/open-mensa-v2.xsd</a></p>
+<h2 id="changelog">Changelog<a class="headerlink" href="#changelog" title="Permanent link">&para;</a></h2>
+<h3 id="version-21-2015-04-05-beta-release">Version 2.1 (2015-04-05, beta release)<a class="headerlink" href="#version-21-2015-04-05-beta-release" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="#optional-version-element-since-version-21">New version tag</a> to specify parser version</li>
+<li><a href="#meta-data-since-version-21">Meta data attributes</a> like canteen name, address, contact info and information about different feeds for this canteen with its schedule information</li>
+</ul>
+<p><strong>Warning: The feed 2.1 is currently in implementation. Although we assume the schema remains unchanged, we may change details during the implementation.</strong></p>
+<h3 id="version-20-2012-09-02">Version 2.0 (2012-09-02)<a class="headerlink" href="#version-20-2012-09-02" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="#el-openmensa">new <em>openmensa</em> root element</a></li>
+<li><a href="#el-meal-name"><em>name</em>s need to have less than 250 chars</a></li>
+<li><a href="#el-canteen">rename cafeteria to <em>canteen</em></a></li>
+<li><a href="#el-meal-price">price <em>role</em>s</a></li>
+<li><a href="#closed-days">closing times on day granularity</a></li>
+</ul>
+<h2 id="feed-example">Example<a class="headerlink" href="#feed-example" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><span class="cp">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;</span>
+<span class="nt">&lt;openmensa</span> <span class="na">version=</span><span class="s">&quot;2.1&quot;</span>
+           <span class="na">xmlns=</span><span class="s">&quot;http://openmensa.org/open-mensa-v2&quot;</span>
+           <span class="na">xmlns:xsi=</span><span class="s">&quot;http://www.w3.org/2001/XMLSchema-instance&quot;</span>
+           <span class="na">xsi:schemaLocation=</span><span class="s">&quot;http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd&quot;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;version&gt;</span>5.04-4<span class="nt">&lt;/version&gt;</span>
+  <span class="nt">&lt;canteen&gt;</span>
+    <span class="nt">&lt;day</span> <span class="na">date=</span><span class="s">&quot;2012-05-29&quot;</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;category</span> <span class="na">name=</span><span class="s">&quot;Hauptgericht&quot;</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;meal&gt;</span>
+          <span class="nt">&lt;name&gt;</span>Rührei mit Rahmspinat und Salzkartoffeln<span class="nt">&lt;/name&gt;</span>
+          <span class="nt">&lt;note&gt;</span>ovo-lacto-vegetabil<span class="nt">&lt;/note&gt;</span>
+          <span class="nt">&lt;price</span> <span class="na">role=</span><span class="s">&quot;student&quot;</span><span class="nt">&gt;</span>1.20<span class="nt">&lt;/price&gt;</span>
+          <span class="nt">&lt;price</span> <span class="na">role=</span><span class="s">&quot;employee&quot;</span><span class="nt">&gt;</span>2.60<span class="nt">&lt;/price&gt;</span>
+          <span class="nt">&lt;price</span> <span class="na">role=</span><span class="s">&quot;other&quot;</span><span class="nt">&gt;</span>3.00<span class="nt">&lt;/price&gt;</span>
+        <span class="nt">&lt;/meal&gt;</span>
+        <span class="nt">&lt;meal&gt;</span>
+          <span class="nt">&lt;name&gt;</span>Hähnchengeschnetzeltes mit exotischen Früchten, dazu Bio-Reis und Mischsalat<span class="nt">&lt;/name&gt;</span>
+          <span class="nt">&lt;note&gt;</span>mit Geflügelfleisch<span class="nt">&lt;/note&gt;</span>
+          <span class="nt">&lt;price</span> <span class="na">role=</span><span class="s">&quot;student&quot;</span><span class="nt">&gt;</span>2.00<span class="nt">&lt;/price&gt;</span>
+          <span class="nt">&lt;price</span> <span class="na">role=</span><span class="s">&quot;employee&quot;</span><span class="nt">&gt;</span>3.35<span class="nt">&lt;/price&gt;</span>
+          <span class="nt">&lt;price</span> <span class="na">role=</span><span class="s">&quot;other&quot;</span><span class="nt">&gt;</span>4.00<span class="nt">&lt;/price&gt;</span>
+        <span class="nt">&lt;/meal&gt;</span>
+      <span class="nt">&lt;/category&gt;</span>
+      <span class="nt">&lt;category</span> <span class="na">name=</span><span class="s">&quot;Sonstiges&quot;</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;meal&gt;</span>
+          <span class="nt">&lt;name&gt;</span>Spargelcremsuppe<span class="nt">&lt;/name&gt;</span>
+          <span class="nt">&lt;price</span> <span class="na">role=</span><span class="s">&quot;other&quot;</span><span class="nt">&gt;</span>2.00<span class="nt">&lt;/price&gt;</span>
+        <span class="nt">&lt;/meal&gt;</span>
+      <span class="nt">&lt;/category&gt;</span>
+    <span class="nt">&lt;/day&gt;</span>
+
+    <span class="nt">&lt;day</span> <span class="na">date=</span><span class="s">&quot;2012-05-28&quot;</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;closed/&gt;</span>
+    <span class="nt">&lt;/day&gt;</span>
+  <span class="nt">&lt;/canteen&gt;</span>
+<span class="nt">&lt;/openmensa&gt;</span>
+</code></pre></div>
+<h2 id="validation">Validation<a class="headerlink" href="#validation" title="Permanent link">&para;</a></h2>
+<p>If you build your feed&rsquo;s xml carefully (simply copy the first 5 lines from our example, all the XML and schema foo will be done automatically for you), you may upload it to a <a href="http://www.validome.org/xml/validate/">XML validator</a> (alternative <a href="http://www.xmlvalidation.com/">validator</a>) that recognizes XML schemas to check for validity.</p>
+<p><strong>If your feed is invalid with respect to our XML schema all contained data will be ignored! So keep your feed valid under all circumstances!</strong></p>
+<h2 id="elements">Elements<a class="headerlink" href="#elements" title="Permanent link">&para;</a></h2>
+<h3 id="el-openmensa"><code>&lt;openmensa&gt;</code><a class="headerlink" href="#el-openmensa" title="Permanent link">&para;</a></h3>
+<p>The root element is <code>openmensa</code>. It encapsulate all other attributes. This element will be preserved across future feed versions. The <em>version</em> attribute must equal <code>2.0</code> or <code>2.1</code>.</p>
+<p>Which version you choose is not technically difference. OpenMensa supports all v2 features independent of the chosen version. We distinguish between the versions to raise errors on to old server schemas and to know which feature set is probably known/implemented.</p>
+<h3 id="el-version"><code>&lt;version&gt;</code> (since version 2.1)<a class="headerlink" href="#el-version" title="Permanent link">&para;</a></h3>
+<p>The top version tag is <em>optional</em>. It can be inserted to define the <strong>version of the parser</strong>. It has nothing to do with the canteen or its menu.</p>
+<p>Alternative the parser version can be return as <code>X-OpenMensa-ParserVersion</code> HTTP-Header. If both are provided, the value from the XML has precedence.</p>
+<p>The version itself is a normal string that must not exceed 63 characters. OpenMensa does only check whether two versions are the same. There is relation derived from the versions. You are free to choose your matching version format.</p>
+<h3 id="el-canteen"><code>&lt;canteen&gt;</code><a class="headerlink" href="#el-canteen" title="Permanent link">&para;</a></h3>
+<p>This tag groups all data for one canteen. <em>Currently only one canteen per feed is supported</em>. Your feed must contain exactly one <code>canteen</code> tag. So to serve multiple canteens you need multiple feeds.</p>
+<h3 id="el-day"><code>&lt;day&gt;</code><a class="headerlink" href="#el-day" title="Permanent link">&para;</a></h3>
+<p>Main part for the canteen are the <code>day</code> element. They need to have a <code>date</code> attribute formatting the date of this day in the <code>YYYY-MM-DD</code> format.</p>
+<p>There must only one day element per date. It is not required to provide tags for every day of a range. But be aware that OpenMensa does not process tags with past dates.</p>
+<h4 id="closed-days">Closed days<a class="headerlink" href="#closed-days" title="Permanent link">&para;</a></h4>
+<p>It is possible to explicit express that the canteen is (completely) closed on a given day. Add a empty <code>closed</code> tag as child.</p>
+<h3 id="el-category"><code>&lt;category&gt;</code><a class="headerlink" href="#el-category" title="Permanent link">&para;</a></h3>
+<p>For each <code>day</code> the meals needs to be grouped by <code>category</code>. Each category tag needs to have a <code>name</code> attribute. The name is (only) displayed to the user and should be descriptive. But the categories only <em>group</em> the individual meals.</p>
+<p>Again a name can only used once a day, but is is normal to use the same or at least similar category names for each day.</p>
+<p>Common grouping is based on some product line or desk.</p>
+<p>A <code>category</code> is only allowed if no <code>closed</code> tag was provided - but then it is required to have at least one category. Each category needs to have at least on meal.</p>
+<h3 id="el-meal"><code>&lt;meal&gt;</code><a class="headerlink" href="#el-meal" title="Permanent link">&para;</a></h3>
+<p>The <code>meal</code> element describes a meal or an individual purchasable entity that is available that the given day. A individual purchasable entry may be a side order.</p>
+<h4 id="el-meal-name"><code>&lt;name&gt;</code><a class="headerlink" href="#el-meal-name" title="Permanent link">&para;</a></h4>
+<p>The important and the only required subelement is the <code>name</code> part. It should be a complete description of the meal. The name must not exceed 250 characters.The name of a meal, e.g. “Rinderhacksteak mit Kartoffeln”, shouldn’t be more than a couple of words or a sentence in maximum.</p>
+<h4 id="el-meal-notes"><code>&lt;notes&gt;</code><a class="headerlink" href="#el-meal-notes" title="Permanent link">&para;</a></h4>
+<p>Additional text may go into several notes: A note often resembles a properties of the associated meal like the ingredients used or some important annotations.</p>
+<p>There is (currently) not restrictions on how the notes should look like or what are common notes. If you have a good proposal talk to us.</p>
+<h4 id="el-meal-price"><code>&lt;price&gt;</code><a class="headerlink" href="#el-meal-price" title="Permanent link">&para;</a></h4>
+<p>For the meal the price can be expressed via (optional) <code>price</code> elements</p>
+<p>Because different prices may apply to different groups of people and we want to show, for which group we introduced several roles:</p>
+<ul>
+<li><code>pupils</code></li>
+<li><code>students</code></li>
+<li><code>employees</code> (of your organization</li>
+<li><code>others</code> (people that do not belong to your organization or to any other group listed here).</li>
+</ul>
+<p>Please omit price for roles that are not applicable or the some as others.</p>
+<h2 id="meta-data-since-version-21">Meta data (since version 2.1)<a class="headerlink" href="#meta-data-since-version-21" title="Permanent link">&para;</a></h2>
+<p>It is possible to provide a special meta data feed. This meta data are used to check whether the canteen meta data are still to-up-date (in case these data can be parsed/automatically received).</p>
+<p>The meta data are optional, they can be embedded within normal (menu) feeds, but they will be ignored on feed URLs. On the other hand any returned day/menu data for a meta data URL will also skipped.</p>
+<p><strong>You must ensure that the elements within the canteen are order like: <code>name</code>, <code>address</code>, <code>city</code>, <code>phone</code>, <code>email</code>, <code>location</code>, <code>availability</code>, <code>times</code>, <code>feed</code>, <code>day</code>!</strong></p>
+<p>If a meta data URL is provided, it is only required at at least on <code>feed</code> attribute is provided.</p>
+<h3 id="metadata-example">Example<a class="headerlink" href="#metadata-example" title="Permanent link">&para;</a></h3>
+<p>Before any further discussion, this is a (complete) example:</p>
+<div class="highlight"><pre><span></span><code><span class="cp">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;</span>
+<span class="nt">&lt;openmensa</span> <span class="na">version=</span><span class="s">&quot;2.1&quot;</span>
+           <span class="na">xmlns=</span><span class="s">&quot;http://openmensa.org/open-mensa-v2&quot;</span>
+           <span class="na">xmlns:xsi=</span><span class="s">&quot;http://www.w3.org/2001/XMLSchema-instance&quot;</span>
+           <span class="na">xsi:schemaLocation=</span><span class="s">&quot;http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd&quot;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;version&gt;</span>5.04-4<span class="nt">&lt;/version&gt;</span>
+  <span class="nt">&lt;canteen&gt;</span>
+    <span class="nt">&lt;name&gt;</span>Mensa Griebnitzsee<span class="nt">&lt;/name&gt;</span>
+    <span class="nt">&lt;address&gt;</span>August-Bebel-Str. 89, 14482 Potsdam<span class="nt">&lt;/address&gt;</span>
+    <span class="nt">&lt;city&gt;</span>Potsdam<span class="nt">&lt;/city&gt;</span>
+    <span class="nt">&lt;phone&gt;</span>(0331) 977 3749/3748<span class="nt">&lt;/phone&gt;</span>
+    <span class="nt">&lt;location</span> <span class="na">latitude=</span><span class="s">&quot;52.3935353446923&quot;</span> <span class="na">longitude=</span><span class="s">&quot;13.1278145313263&quot;</span> <span class="nt">/&gt;</span>
+    <span class="nt">&lt;availability&gt;</span>public<span class="nt">&lt;/availability&gt;</span>
+    <span class="nt">&lt;times</span> <span class="na">type=</span><span class="s">&quot;opening&quot;</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;monday</span> <span class="na">open=</span><span class="s">&quot;11:00-14:00&quot;</span> <span class="nt">/&gt;</span>
+      <span class="nt">&lt;tuesday</span> <span class="na">open=</span><span class="s">&quot;11:00-14:00&quot;</span> <span class="nt">/&gt;</span>
+      <span class="nt">&lt;wednesday</span> <span class="na">open=</span><span class="s">&quot;11:00-14:00&quot;</span> <span class="nt">/&gt;</span>
+      <span class="nt">&lt;thursday</span> <span class="na">open=</span><span class="s">&quot;11:00-14:00&quot;</span> <span class="nt">/&gt;</span>
+      <span class="nt">&lt;friday</span> <span class="na">open=</span><span class="s">&quot;11:00-14:00&quot;</span> <span class="nt">/&gt;</span>
+      <span class="nt">&lt;saturday</span> <span class="na">open=</span><span class="s">&quot;11:00-13:30&quot;</span> <span class="nt">/&gt;</span>
+      <span class="nt">&lt;sunday</span> <span class="na">closed=</span><span class="s">&quot;true&quot;</span> <span class="nt">/&gt;</span>
+    <span class="nt">&lt;/times&gt;</span>
+    <span class="nt">&lt;feed</span> <span class="na">name=</span><span class="s">&quot;today&quot;</span> <span class="na">priority=</span><span class="s">&quot;0&quot;</span><span class="nt">&gt;</span>
+      <span class="cm">&lt;!-- cron like schedule information --&gt;</span>
+      <span class="nt">&lt;schedule</span> <span class="na">dayOfMonth=</span><span class="s">&quot;*&quot;</span> <span class="na">dayOfWeek=</span><span class="s">&quot;*&quot;</span> <span class="na">hour=</span><span class="s">&quot;8-14&quot;</span> <span class="na">retry=</span><span class="s">&quot;30 1&quot;</span> <span class="nt">/&gt;</span>
+      <span class="nt">&lt;url&gt;</span>http://kaifabian.de/om/potsdam/griebnitzsee.xml?today<span class="nt">&lt;/url&gt;</span>
+      <span class="nt">&lt;source&gt;</span>http://www.studentenwerk-potsdam.de/mensa-griebnitzsee.html<span class="nt">&lt;/source&gt;</span>
+    <span class="nt">&lt;/feed&gt;</span>
+    <span class="nt">&lt;feed</span> <span class="na">name=</span><span class="s">&quot;full&quot;</span> <span class="na">priority=</span><span class="s">&quot;1&quot;</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;schedule</span> <span class="na">dayOfMonth=</span><span class="s">&quot;*&quot;</span> <span class="na">dayOfWeek=</span><span class="s">&quot;1&quot;</span> <span class="na">hour=</span><span class="s">&quot;8&quot;</span> <span class="na">retry=</span><span class="s">&quot;60 5 1440&quot;</span> <span class="nt">/&gt;</span>
+      <span class="nt">&lt;url&gt;</span>http://kaifabian.de/om/potsdam/griebnitzsee.xml<span class="nt">&lt;/url&gt;</span>
+      <span class="nt">&lt;source&gt;</span>http://www.studentenwerk-potsdam.de/speiseplan/<span class="nt">&lt;/source&gt;</span>
+    <span class="nt">&lt;/feed&gt;</span>
+  <span class="nt">&lt;/canteen&gt;</span>
+<span class="nt">&lt;/openmensa&gt;</span>
+</code></pre></div>
+<h3 id="el-feed"><code>&lt;feed&gt;</code><a class="headerlink" href="#el-feed" title="Permanent link">&para;</a></h3>
+<p>A feed is basically only a URL. It is expected that OpenMensa gets a valid feed when requesting this URL.</p>
+<p>It is possible to define multiple feeds, because there may be menus that change often (e.g. the menu for the current day) and other that not. In additional if it parsing of one aspect fails, the other data should be served normally.</p>
+<p>It is required that each <code>feed</code> element contains one unique <code>name</code> attribute. This name is only used by OpenMensa to match the given feed to previously saved feed data. But we recommend to choose descriptive names.</p>
+<p>The optional <code>priority</code> attribute defines override rules between different feeds for a canteen. All feeds have per default the <code>priority</code> <code>0</code>. A feed can update/remove a meal if the priority is same or greater than the priority of the feed that created the menu. A example usage: use priority <code>0</code> for the full feed, but use <code>10</code> for the <code>today</code> feed - today data have priority and can not be overridden by the normal feed.</p>
+<h4 id="el-feed-url"><code>&lt;url&gt;</code><a class="headerlink" href="#el-feed-url" title="Permanent link">&para;</a></h4>
+<p>The <code>url</code> element defines which page OpenMensa should request.</p>
+<h4 id="el-feed-schedule"><code>&lt;schedule&gt;</code><a class="headerlink" href="#el-feed-schedule" title="Permanent link">&para;</a></h4>
+<p>The feed has a schedule element, that specify when this URL should be fetched.</p>
+<p>The attributes <code>dayOfMonth</code>, <code>dayOfWeek</code>, <code>month</code>, <code>hour</code> and <code>minute</code> describes each a patter for the given unit. The feed is accessed if the current time matches <strong>ALL</strong> these patterns. It may take some minutes until the feed is fetched depending on the work load.</p>
+<p>The schedule behaviour and format is equal to <code>crontab</code>.</p>
+<p>Each pattern may be a comma separated list of individual numbers or ranges like <code>1,3-5</code>. Range are inclusive.</p>
+<p>The special range <code>*</code> means all possible values. A range can be followed by a <code>/&lt;number&gt;</code> to specify to only match the nth value within the range. <code>0-23/2</code> matches <code>0,2,4,6,8,10,12,14,16,18,20,22</code>.</p>
+<p>Only the <code>hour</code> attribute is required, <code>dayOfMonth</code>, <code>dayOfWeek</code> and <code>month</code> default to <code>*</code>, <code>minute</code> to <code>0</code>.</p>
+<p><code>dayOfMonth</code> starts with <code>1</code>, <code>dayOfWeek</code> with <code>0</code> meaning Sunday (<code>1</code> Monday &hellip;).</p>
+<p>The optional <code>retry</code> attribute defines how to handle errors. Without this attribute OpenMensa does not retry to fetch the feed on errors.</p>
+<p>The value must be a white-space separated list of positive numbers.</p>
+<p>The odd positioned one define an interval in <em>minutes</em>, the even positioned the maximal number of retried for this interval. If the last retry limit is omitted, OpenMensa retries until the next regular time.</p>
+<p>An example: <code>30 3</code> means retry maximal 3 time every half hour. <code>45 5 1440</code> means repeat first maximal 5 time every 45 minutes, if the feed fails still retry only once a day.</p>
+<p>If the <code>schedule</code> element is omitted, the feed can only be used for manual fetching. OpenMensa has no implicit scheduling for feeds.</p>
+<h4 id="el-feed-source"><code>&lt;source&gt;</code><a class="headerlink" href="#el-feed-source" title="Permanent link">&para;</a></h4>
+<p>You can provide a single URL, from that the data are (mostly) received. So in case of an error or a question, the user can be redirected to this page.</p>
+<h3 id="canteen-meta-data">Canteen meta data<a class="headerlink" href="#canteen-meta-data" title="Permanent link">&para;</a></h3>
+<p>Each canteen attribute that can be edited on OpenMensa can also be provided via the feed. Changes via the feed are NOT used directly, but must be confirmed by one canteen administration. The author is informed about the changes via an email.</p>
+<p>The supported meta data have each its one tag, the following tags are supported:</p>
+<ul>
+<li><strong>name</strong>: the canteen name</li>
+<li><strong>address</strong>: the (postal) address. We do not require any special format. But the form <code>street nr, zip city</code> is common. If no geo coordinate for the canteen is provided the address is mapped to a point.</li>
+<li><strong>city</strong>: the user relevant city of this canteen. This does not need to be the postal city. The value is e.g. used to search canteens or group them.</li>
+<li><strong>email</strong> / <strong>phone</strong>: an email address respectively the phone number to contact the canteen. We do not ensure a specific format: the main purpose is that is understandable for humans, but we highly recommend following the <a href="http://en.wikipedia.org/wiki/E.123">E.123</a> standard.</li>
+<li><strong>location</strong>: the geo coordinates can be passed an <code>latitude</code> and a <code>longitude</code> attribute. Each attribute needs to be a float value. The tag must not contain any content.</li>
+<li><strong>availability</strong>: indicate whether the canteen can be used by everyone (<strong>public</strong>) or not (<strong>restricted</strong>)</li>
+<li><strong>opening times</strong>: see next section</li>
+</ul>
+<h4 id="opening-times">Opening times<a class="headerlink" href="#opening-times" title="Permanent link">&para;</a></h4>
+<p>Opening types are defined via a <code>times</code> tag. It must have a <code>type</code> attribute with the value <code>opening</code>. We may later support other time ranges like meal serving times.</p>
+<p>The <code>times</code> tag should have 7 <code>open</code> child elements (one per week day). If tags are omitted OpenMensa assumes that is was not possible to get a information for this particular day. The elements name are the English weekday name: <code>monday</code>, <code>tuesday</code>, <code>wednesday</code>, <code>thursday</code>, <code>friday</code>, <code>saturday</code>, <code>sunday</code>. <em>You must ensure a correct ordering.</em></p>
+<p>Set the <code>closed</code> attribute to <code>true</code> indicate that the canteen has not open at all. Use a <code>open</code> attribute of <code>HH:mm-HH:mm</code> to specify that the canteen has open within the given time interval. Please contact OpenMensa if you need to specify due intervals / express a pause. <em><code>closed</code> and <code>open</code> attribute must not used both!</em></p>
+<p>Remember special closed days can be expressed via the <a href="#closed-days"><code>closed</code> tag of days</a>. Support of special opening times is currently not planed. Please contact OpenMensa if you have such a use case.</p>
+
+  <hr>
+<div class="md-source-file">
+  <small>
+    
+      Last update:
+      2022-07-09
+    
+  </small>
+</div>
+
+              
+            </article>
+            
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var tab,labels=set.querySelector(".tabbed-labels");for(tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+          </div>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+    <nav class="md-footer__inner md-grid" aria-label="Footer" >
+      
+        
+        <a href="../v1/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Feed v1 (deprecated)" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Feed v1 (deprecated)
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../../parsers/" class="md-footer__link md-footer__link--next" aria-label="Next: The Knowledge About OpenMensa Parser" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              The Knowledge About OpenMensa Parser
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.annotate", "content.tabs.link", "navigation.expand", "navigation.indexes", "navigation.sections", "navigation.tracking", "search.highlight", "search.share", "search.suggest"], "search": "../../assets/javascripts/workers/search.b97dbffb.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.6c7ad80a.min.js"></script>
+      
+    
+  </body>
+</html>
